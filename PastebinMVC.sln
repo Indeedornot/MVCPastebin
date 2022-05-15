@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerInMemory", "IdentityServerInMemory\IdentityServerInMemory.csproj", "{EA037993-94B1-4F14-BE7B-0E44BF1D4E4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserTextDataApi", "UserTextDataApi\UserTextDataApi.csproj", "{9D31D8FA-B787-45D2-8138-EC686E38269F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{7EC6F95F-BC49-4745-8925-3332E3529967}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA037993-94B1-4F14-BE7B-0E44BF1D4E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA037993-94B1-4F14-BE7B-0E44BF1D4E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA037993-94B1-4F14-BE7B-0E44BF1D4E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA037993-94B1-4F14-BE7B-0E44BF1D4E4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D31D8FA-B787-45D2-8138-EC686E38269F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D31D8FA-B787-45D2-8138-EC686E38269F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D31D8FA-B787-45D2-8138-EC686E38269F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D31D8FA-B787-45D2-8138-EC686E38269F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EC6F95F-BC49-4745-8925-3332E3529967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EC6F95F-BC49-4745-8925-3332E3529967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EC6F95F-BC49-4745-8925-3332E3529967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EC6F95F-BC49-4745-8925-3332E3529967}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
