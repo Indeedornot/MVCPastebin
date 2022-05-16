@@ -1,0 +1,14 @@
+
+kcsharpsquid:S1118	"OAdd a 'protected' constructor or the 'static' keyword to the class declaration.(ª‰ï
+`csharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(’•®z
+fcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(ó©Íøÿÿÿÿ
+acsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(›‰™
+fcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(Ó“ıÓøÿÿÿÿ
+acsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(óÅ¶
+acsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(À“Ÿ¦
+hcsharpsquid:S2223"LChange the visibility of 'AllowLocalLogin' or make it 'const' or 'readonly'.(’•®z
+qcsharpsquid:S2223"OChange the visibility of 'AllowRememberLogin' or make it 'const' or 'readonly'.(ó©Íøÿÿÿÿ
+qcsharpsquid:S2223"TChange the visibility of 'RememberMeLoginDuration' or make it 'const' or 'readonly'.(›‰™
+ocsharpsquid:S2223"MChange the visibility of 'ShowLogoutPrompt' or make it 'const' or 'readonly'.(Ó“ıÓøÿÿÿÿ
+wcsharpsquid:S2223"ZChange the visibility of 'AutomaticRedirectAfterSignOut' or make it 'const' or 'readonly'.(óÅ¶
+xcsharpsquid:S2223"[Change the visibility of 'InvalidCredentialsErrorMessage' or make it 'const' or 'readonly'.(À“Ÿ¦

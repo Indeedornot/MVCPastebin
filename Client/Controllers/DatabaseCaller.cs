@@ -64,7 +64,7 @@ public static class DatabaseCaller
     public static async Task Delete(int id)
     {
         using var apiClient = await SetToken();
-        _ = await apiClient.PostAsync("Delete/{id}",null);
+        _ = await apiClient.PostAsync($"Delete/{id}",null);
     }
 
     public static async Task Update(int id, string text)

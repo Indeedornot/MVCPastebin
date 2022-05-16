@@ -64,12 +64,13 @@ public class DatabaseInteractionController : Controller
     public async Task Delete(int index)
     {
         int userId = GetUserId();
-        var record = await FindWithText(userId);
+        var userData = await FindWithText(userId);
+        
+        if (userData is null) return;
+        if (index > userData.Texts.Count - 1 || index < 0) return;
 
-        if (record is null) return;
-        if (index > record.Texts.Count - 1 || index < 0) return;
-
-        record.Texts.Remove(record.Texts.ElementAt(index));
+        userData.Texts.RemoveAt(index);
+        _context.Update(userData);
         await _context.SaveChangesAsync();
     }
     

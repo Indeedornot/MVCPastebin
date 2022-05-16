@@ -7,21 +7,27 @@
 
 <h1>Index</h1>
 <a for-route="Routes.Controllers.ShowData.Create()">Create New</a>
+<a for-route="Routes.Controllers.ShowData.DeleteAll()">Delete All</a>
 <table>
-  <tr>
-      <th>Text</th>
-      <th>TextId</th>
-      <th>UserId</th>
-      <th>Edit</th>
-  </tr>
-  
-  @for (int i = 0; Model is not null && i < Model.Texts.Count; i++)
-  {
-      <tr>
-          <td>@Model.Texts[i].textValue</td>
-          <td>@i</td>
-          <td>@Model.Id</td>
-          <td><a for-route="Routes.Controllers.ShowData.Edit(@i, @Model.Texts[i].textValue)">Edit</a></td>
-      </tr>
-  }
+    <tr>
+        <th>Text</th>
+        <th>TextId</th>
+        <th>UserId</th>
+        <th>Edit</th>
+    </tr>
+
+    @for (int i = 0; Model is not null && i < Model.Texts.Count; i++)
+    {
+        <tr>
+            <td>@Model.Texts[i].textValue</td>
+            <td>@i</td>
+            <td>@Model.Id</td>
+            <td>
+                <a for-route="Routes.Controllers.ShowData.Edit(i, Model.Texts[i].textValue)">Edit</a>
+            </td>
+            <td>
+                <a for-route="Routes.Controllers.ShowData.Delete(i)">Delete</a>
+            </td>
+        </tr>
+    }
 </table>

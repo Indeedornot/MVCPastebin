@@ -45,4 +45,18 @@ public class ShowDataController : Controller
         await DatabaseCaller.Update(id,text);
         return ShowData.Index().Redirect(this);
     }
+
+    [HttpGet]
+    public async Task<IActionResult> Delete(int id)
+    {
+        await DatabaseCaller.Delete(id);
+        return ShowData.Index().Redirect(this);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> DeleteAll()
+    {
+        await DatabaseCaller.DeleteAll();
+        return ShowData.Index().Redirect(this);
+    }
 }

@@ -10,84 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3f05c28-4dd0-4fcd-a438-499e7d7d6d7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Client/Models/UserText.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserTextDataApi/Data/Extensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserTextDataApi/Data/UserDataDbInitializer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserTextDataApi/Data/UserText.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PastebinMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PastebinMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Controllers/DatabaseCallerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Controllers/DatabaseCaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Controllers/DatabaseCaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Controllers/DatabaseCaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/Controllers/ShowDataController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Controllers/ShowDataController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Models/UserTextData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Models/UserData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Views/ShowData/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Views/ShowData/Create.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Views/ShowData/Delete.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Views/ShowData/Details.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Views/ShowData/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Views/ShowData/Edit.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/Views/ShowData/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Views/ShowData/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Views/_ViewImports.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/net6.0/Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/net6.0/Client.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/bin/Debug/net6.0/Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/net6.0/Client.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/net6.0/Client.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/net6.0/Client.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/obj/Debug/net6.0/Client.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/net6.0/Client.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Config.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Config.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/AccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/AccountOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/AccountOptions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/ExternalController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/ExternalController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/ExternalProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/ExternalProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/LoggedOutViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/LoggedOutViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/LoginInputModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/LoginInputModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/LoginViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/LoginViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/LogoutInputModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/LogoutInputModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/LogoutViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/LogoutViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/RedirectViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Account/RedirectViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Consent/ConsentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Consent/ConsentController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Consent/ConsentInputModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Consent/ConsentInputModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Consent/ConsentOptions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Consent/ConsentOptions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Consent/ConsentViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Consent/ConsentViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Consent/ProcessConsentResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Consent/ProcessConsentResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Consent/ScopeViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Consent/ScopeViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Device/DeviceAuthorizationInputModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Device/DeviceAuthorizationInputModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Device/DeviceAuthorizationViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Device/DeviceAuthorizationViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Device/DeviceController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Device/DeviceController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Diagnostics/DiagnosticsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Diagnostics/DiagnosticsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Diagnostics/DiagnosticsViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Diagnostics/DiagnosticsViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Extensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Extensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Grants/GrantsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Grants/GrantsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Grants/GrantsViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Grants/GrantsViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Home/ErrorViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Home/ErrorViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Home/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/Home/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/SecurityHeadersAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/SecurityHeadersAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/TestUsers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Controllers/TestUsers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/bin/Debug/net6.0/IdentityServerInMemory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/bin/Debug/net6.0/IdentityServerInMemory.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/bin/Debug/net6.0/IdentityServerInMemory.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/bin/Debug/net6.0/IdentityServerInMemory.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/obj/Debug/net6.0/IdentityServerInMemory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/obj/Debug/net6.0/IdentityServerInMemory.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/obj/Debug/net6.0/IdentityServerInMemory.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/obj/Debug/net6.0/IdentityServerInMemory.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/obj/Debug/net6.0/ref/IdentityServerInMemory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/obj/Debug/net6.0/ref/IdentityServerInMemory.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/obj/Debug/net6.0/refint/IdentityServerInMemory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/obj/Debug/net6.0/refint/IdentityServerInMemory.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/net6.0/Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/net6.0/Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/net6.0/Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/net6.0/Client.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/net6.0/ref/Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/net6.0/ref/Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/net6.0/refint/Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/net6.0/refint/Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/staticwebassets.pack.sentinel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IdentityServerInMemory/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/IdentityServerInMemory/obj/staticwebassets.pack.sentinel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserTextDataApi/Controllers/DatabaseInteractionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserTextDataApi/Controllers/DatabaseInteractionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserTextDataApi/Data/UserTextData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserTextDataApi/Data/UserTextDataDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserTextDataApi/Data/UserTextDataDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserTextDataApi/Data/UserTextDataWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserTextDataApi/Data/UserData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserTextDataApi/Data/Wrapper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserTextDataApi/Migrations/20220515131935_InitialMigration.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserTextDataApi/Migrations/20220515131935_InitialMigration.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserTextDataApi/Migrations/UserTextDataDbContextModelSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserTextDataApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserTextDataApi/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserTextDataApi/bin/Debug/net6.0/UserTextDataApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserTextDataApi/bin/Debug/net6.0/UserTextDataApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserTextDataApi/bin/Debug/net6.0/UserTextDataApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserTextDataApi/bin/Debug/net6.0/UserTextDataApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserTextDataApi/obj/Debug/net6.0/UserTextDataApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserTextDataApi/obj/Debug/net6.0/UserTextDataApi.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserTextDataApi/obj/Debug/net6.0/UserTextDataApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserTextDataApi/obj/Debug/net6.0/UserTextDataApi.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserTextDataApi/obj/Debug/net6.0/UserTextDataApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserTextDataApi/obj/Debug/net6.0/UserTextDataApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserTextDataApi/obj/Debug/net6.0/UserTextDataApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserTextDataApi/obj/Debug/net6.0/UserTextDataApi.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserTextDataApi/obj/Debug/net6.0/ref/UserTextDataApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserTextDataApi/obj/Debug/net6.0/ref/UserTextDataApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserTextDataApi/obj/Debug/net6.0/refint/UserTextDataApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserTextDataApi/obj/Debug/net6.0/refint/UserTextDataApi.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserTextDataApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserTextDataApi/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserTextDataApi/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/UserTextDataApi/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,20 +89,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeLensConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.UserTextDataApi">
     <configuration name="Client" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Client/Client.csproj" />
@@ -229,7 +172,8 @@
       <workItem from="1652628977131" duration="610000" />
       <workItem from="1652633975004" duration="5202000" />
       <workItem from="1652700387642" duration="359000" />
-      <workItem from="1652700826152" duration="12507000" />
+      <workItem from="1652700826152" duration="13245000" />
+      <workItem from="1652725301562" duration="2605000" />
     </task>
     <servers />
   </component>
@@ -270,27 +214,13 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Client/Controllers/DatabaseCaller.cs</url>
           <line>72</line>
-          <properties documentPath="C:\Users\Indeed\Desktop\Repositories\PastebinMVC\Client\Controllers\DatabaseCallerController.cs" initialLine="72" containingFunctionPresentation="method 'RetrieveClaimsJson'">
-            <startOffsets>
-              <option value="2516" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2568" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Indeed\Desktop\Repositories\PastebinMVC\Client\Controllers\DatabaseCallerController.cs" initialLine="72" containingFunctionPresentation="method 'RetrieveClaimsJson'" />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/UserTextDataApi/Migrations/20220515131935_InitialMigration.cs</url>
           <line>23</line>
-          <properties documentPath="C:\Users\Indeed\Desktop\Repositories\PastebinMVC\UserTextDataApi\Migrations\20220515131935_InitialMigration.cs" initialLine="23" containingFunctionPresentation="lambda expression inside method 'Up'">
-            <startOffsets>
-              <option value="719" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1087" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Indeed\Desktop\Repositories\PastebinMVC\UserTextDataApi\Migrations\20220515131935_InitialMigration.cs" initialLine="23" containingFunctionPresentation="lambda expression inside method 'Up'" />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
@@ -307,17 +237,56 @@
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/UserTextDataApi/Controllers/DatabaseInteractionController.cs</url>
-          <line>53</line>
-          <properties documentPath="C:\Users\Indeed\Desktop\Repositories\PastebinMVC\UserTextDataApi\Controllers\DatabaseInteractionController.cs" initialLine="53" containingFunctionPresentation="method 'Update'">
+          <url>file://$PROJECT_DIR$/Client/Controllers/ShowDataController.cs</url>
+          <line>44</line>
+          <properties documentPath="C:\Users\Indeed\Desktop\Repositories\PastebinMVC\Client\Controllers\ShowDataController.cs" initialLine="44" containingFunctionPresentation="method 'EditPost'">
             <startOffsets>
-              <option value="1679" />
+              <option value="1072" />
             </startOffsets>
             <endOffsets>
-              <option value="1704" />
+              <option value="1109" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="67" />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UserTextDataApi/Controllers/DatabaseInteractionController.cs</url>
+          <line>71</line>
+          <properties documentPath="C:\Users\Indeed\Desktop\Repositories\PastebinMVC\UserTextDataApi\Controllers\DatabaseInteractionController.cs" initialLine="70" containingFunctionPresentation="method 'Delete'">
+            <startOffsets>
+              <option value="2288" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2319" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UserTextDataApi/Controllers/DatabaseInteractionController.cs</url>
+          <line>66</line>
+          <properties documentPath="C:\Users\Indeed\Desktop\Repositories\PastebinMVC\UserTextDataApi\Controllers\DatabaseInteractionController.cs" initialLine="66" containingFunctionPresentation="method 'Delete'">
+            <startOffsets>
+              <option value="2122" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2164" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/UserTextDataApi/Controllers/DatabaseInteractionController.cs</url>
+          <line>65</line>
+          <properties documentPath="C:\Users\Indeed\Desktop\Repositories\PastebinMVC\UserTextDataApi\Controllers\DatabaseInteractionController.cs" initialLine="65" containingFunctionPresentation="method 'Delete'">
+            <startOffsets>
+              <option value="2088" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2113" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
