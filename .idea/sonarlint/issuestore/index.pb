@@ -1,6 +1,14 @@
 
+£
+sProgram Files/dotnet/sdk/6.0.202/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_6_default.editorconfig,3\5\352f41e4ec66f03d852847957fcf01da3ec34d2f
 D
 Client/Client.csproj,a\c\ac0e6f3a266d69221c8dbff68d9a27ddfaf4315f
+T
+$Client/Controllers/DatabaseCaller.cs,2\3\23483ad4fe6a0993f4aab7d011b848af835eb47d
+T
+$Client/Controllers/HomeController.cs,c\5\c5077c434a162dfb110f528f290912c37d6a17ed
+X
+(Client/Controllers/ShowDataController.cs,8\5\8525cfb4fcd6fb0345af15ffa1a702b41d6cf14e
 O
 Client/Models/ErrorViewModel.cs,4\f\4f20ed8aae7cbac084dc124201aba02d43ff83c4
 I
@@ -23,6 +31,12 @@ V
 &Client/Views/Shared/_Layout.cshtml.css,2\2\222834e6218855c2b163ab4d3b556e64025cc29e
 d
 4Client/Views/Shared/_ValidationScriptsPartial.cshtml,c\d\cd69f9fd4b298a376619695f256a03b4b44d6616
+S
+#Client/Views/ShowData/Create.cshtml,c\1\c1dc64ff436d4a961f12522e169aab111abab1e1
+Q
+!Client/Views/ShowData/Edit.cshtml,0\0\00e21b2d7c59ee71d9609ed599e5a990c2b01623
+R
+"Client/Views/ShowData/Index.cshtml,a\0\a0839ef5c2ff3bcd0aa75843cb2a7a0835f86e6b
 P
  Client/Views/_ViewImports.cshtml,b\1\b122a516276eeac612667645ee48202c2fd15c66
 N
@@ -211,8 +225,14 @@ i
 9IdentityServerInMemory/Controllers/Home/ErrorViewModel.cs,e\a\eab9286ad15dbe58aa3bf0da587a0e746c2025d7
 i
 9IdentityServerInMemory/Controllers/Home/HomeController.cs,8\a\8a1be73de3cc9e053bbc547b7e1724c2a6880b0a
+n
+>IdentityServerInMemory/Controllers/SecurityHeadersAttribute.cs,e\1\e10169ad7e39fbd02e1ac711d5f72b671f13ae35
+_
+/IdentityServerInMemory/Controllers/TestUsers.cs,1\1\117704589d2b2771484be2ff5a7c4ac8d6caf7bb
 d
 4IdentityServerInMemory/IdentityServerInMemory.csproj,6\3\639fe2228c34a7718c9b3b3973c2e55c2eb0192b
+Q
+!IdentityServerInMemory/Program.cs,f\d\fd30f4e377e174f705c2630dd8f6e0faaeff8d0b
 e
 5IdentityServerInMemory/Properties/launchSettings.json,9\d\9d8c43f653c9128c2c80e7665cd385429a472bc2
 h
@@ -511,12 +531,28 @@ r
 BIdentityServerInMemory/wwwroot/lib/jquery/dist/jquery.slim.min.map,1\0\104bfc16393fe2520f800f2851604493fde6a418
 ?
 PastebinMVC.sln,3\7\373fe3d96008d37814b449b59f3edb547becb0db
+l
+<UserTextDataApi/Controllers/DatabaseInteractionController.cs,0\e\0eee774b39cc8bce2e097d24ee2bf5f4aa9efdd8
+a
+1UserTextDataApi/Controllers/IdentityController.cs,3\8\3823e6ed11f1a289feffb2133cb90c1c64953d46
+R
+"UserTextDataApi/Data/Extensions.cs,7\6\765ec483ae8b408ccd2bfda4c559ddc0927f9207
+P
+ UserTextDataApi/Data/UserData.cs,c\e\ced54e2fdd95c9f4a529dd8a0603781d3bb7f864
+]
+-UserTextDataApi/Data/UserDataDbInitializer.cs,0\c\0cac1c7f22c776deab36c253ffdcf2c04d78b286
+P
+ UserTextDataApi/Data/UserText.cs,c\b\cb0ac8ada72df13f5e0a3d969cd30815658d77e4
+]
+-UserTextDataApi/Data/UserTextDataDbContext.cs,d\e\de380aa98698fd34e1f4a47f2131c28bc7774351
 r
 BUserTextDataApi/Migrations/20220516151656_ComplexModel.Designer.cs,1\2\122accdfc0f18c420336d5eb34f1e069a8a41e8d
 i
 9UserTextDataApi/Migrations/20220516151656_ComplexModel.cs,f\b\fb216422e68554c175e5a6b875a902fe428b6a48
 l
 <UserTextDataApi/Migrations/UserDataDbContextModelSnapshot.cs,2\2\22a72c6d8c02e31dfd17c267d06649a41e86ea84
+J
+UserTextDataApi/Program.cs,c\a\cafd139caeead38a325bdb06e153f22402b8867d
 ^
 .UserTextDataApi/Properties/launchSettings.json,d\9\d99227f1e317d5e496d3bc6c1c7a0a9210498f29
 c
@@ -527,6 +563,8 @@ V
 &UserTextDataApi/UserTextDataApi.csproj,3\4\34d2ab7b406bf2f31c982060fc534f996264854f
 \
 ,UserTextDataApi/appsettings.Development.json,7\5\75658b51cd279f4e163de6c8a1f27259ddcb3bfc
+P
+ UserTextDataApi/appsettings.json,d\6\d636af2be8692af92af1be58927449b95c2209ed
 p
 @UserTextDataApi/obj/Debug/net6.0/UserTextDataApi.AssemblyInfo.cs,6\6\66ae4fdc28bca1648e5f6292b14d451ab315a26a
 Š
@@ -534,16 +572,4 @@ ZUserTextDataApi/obj/Debug/net6.0/UserTextDataApi.GeneratedMSBuildEditorConfig.e
 r
 BUserTextDataApi/obj/Debug/net6.0/UserTextDataApi.GlobalUsings.g.cs,4\e\4e1f79105cd42adeb08d2c1f3aa976044ae97254
 Q
-!IdentityServerInMemory/Program.cs,f\d\fd30f4e377e174f705c2630dd8f6e0faaeff8d0b
-_
-/IdentityServerInMemory/Controllers/TestUsers.cs,1\1\117704589d2b2771484be2ff5a7c4ac8d6caf7bb
-n
->IdentityServerInMemory/Controllers/SecurityHeadersAttribute.cs,e\1\e10169ad7e39fbd02e1ac711d5f72b671f13ae35
-R
-"UserTextDataApi/Data/Extensions.cs,7\6\765ec483ae8b408ccd2bfda4c559ddc0927f9207
-Q
-!Client/Views/ShowData/Edit.cshtml,0\0\00e21b2d7c59ee71d9609ed599e5a990c2b01623
-S
-#Client/Views/ShowData/Create.cshtml,c\1\c1dc64ff436d4a961f12522e169aab111abab1e1
-P
- UserTextDataApi/appsettings.json,d\6\d636af2be8692af92af1be58927449b95c2209ed
+!Client/Controllers/DatabaseIPs.cs,c\e\ced3cc05c2ddde28b6cad34c1a7de43c1f97153f

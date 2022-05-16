@@ -1,0 +1,7 @@
+
+Scsharpsquid:S1125;"*Remove the unnecessary Boolean literal(s).(ΊÒΰ‡ύÿÿÿÿ8°®ύσ0
+Scsharpsquid:S1125;"*Remove the unnecessary Boolean literal(s).(ΊÒΰ‡ύÿÿÿÿ8±®ύσ0
+Tcsharpsquid:S1066"/Merge this if statement with the enclosing one.(‚¶Ò–8±®ύσ0
+]csharpsquid:S112>"5'System.Exception' should not be thrown by user code.(ρΐ±ÿÿÿÿÿ8±®ύσ0
+]csharpsquid:S112Z"5'System.Exception' should not be thrown by user code.(°¬Άώÿÿÿÿ8²®ύσ0
+csharpsquid:S4487"VRemove this unread private field '_clientStore' or refactor the code to use its value.(Γ¥ª¦ωÿÿÿÿ8²®ύσ0
