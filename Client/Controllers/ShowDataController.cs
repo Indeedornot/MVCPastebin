@@ -1,107 +1,48 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Differencing;
+using Microsoft.EntityFrameworkCore;
+using Routes.Controllers;
 
-namespace Client.Controllers
+namespace Client.Controllers;
+
+public class ShowDataController : Controller
 {
-    public class ShowDataController : Controller
+    // GET: ShowData
+    public async Task<IActionResult> Index()
     {
-        // GET: ShowData
-        public async Task<IActionResult> Index()
-        {
-            var data = await DatabaseCaller.RetrieveAll();
-            return View(data?.Text);
-        }
+        var data = await DatabaseCaller.RetrieveAll();
+        return View(data);
+    }
+        
+    public async Task<IActionResult> Claims()
+    {
+        return Content(await DatabaseCaller.RetrieveClaimsJson()); 
+    }
 
-        // GET: ShowData/Details/5
-        public async Task<IActionResult> Details(int id)
-        {
-            var userTextData = await DatabaseCaller.Retrieve(id);
-            if (userTextData == null)
-            {
-                return NotFound();
-            }
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+    }
+    
+    [HttpPost]
+    public async Task<IActionResult> CreatePost(string text)
+    {
+        await DatabaseCaller.Add(text);
+        return ShowData.Index().Redirect(this);
+    }
 
-            return View(userTextData);
-        }
+    [HttpGet]
+    public IActionResult Edit(int id, string text)
+    {
+        if (string.IsNullOrEmpty(text)) return ShowData.Index().Redirect(this);
+        return View(model: (id, text));
+    }
 
-        // GET: ShowData/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: ShowData/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(string text)
-        {
-            if (ModelState.IsValid)
-            {
-                await DatabaseCaller.Add(text);
-                return RedirectToAction(nameof(Index));
-            }
-            return View();
-        }
-
-        // GET: ShowData/Edit/5
-        public async Task<IActionResult> Edit(int id)
-        {
-            var userData = await DatabaseCaller.Retrieve(id);
-            if (userData is null)
-            {
-                return NotFound();
-            }
-
-            return View(userData);
-        }
-
-        // POST: ShowData/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        // [HttpPost]
-        // [ValidateAntiForgeryToken]
-        // public async Task<IActionResult> Edit(int id, string Text)
-        // {
-        //
-        //     if (ModelState.IsValid)
-        //     {
-        //         try
-        //         {
-        //             _context.Update(userTextDataWrapper);
-        //             await _context.SaveChangesAsync();
-        //         }
-        //         catch (DbUpdateConcurrencyException)
-        //         {
-        //             if (!UserTextDataWrapperExists(userTextDataWrapper.Id))
-        //             {
-        //                 return NotFound();
-        //             }
-        //             else
-        //             {
-        //                 throw;
-        //             }
-        //         }
-        //         return RedirectToAction(nameof(Index));
-        //     }
-        //     return View(userTextDataWrapper);
-        // }
-
-        // GET: ShowData/Delete/5
-        public IActionResult Delete(int id)
-        {
-            var userData = DatabaseCaller.Retrieve(id);
-
-            return View(userData);
-        }
-
-        // POST: ShowData/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            await DatabaseCaller.Delete(id);
-            return RedirectToAction(nameof(Index));
-        }
+    [HttpPost]
+    public async Task<IActionResult> EditPost(int id, string text)
+    {
+        await DatabaseCaller.Update(id,text);
+        return ShowData.Index().Redirect(this);
     }
 }

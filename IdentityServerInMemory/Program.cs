@@ -54,7 +54,7 @@ builder.Services.AddAuthentication()
         options.AllowedCertificateTypes = CertificateTypes.All;
         options.RevocationMode = X509RevocationMode.NoCheck;
     });
-;
+
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {

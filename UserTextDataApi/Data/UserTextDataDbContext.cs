@@ -3,23 +3,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace UserTextDataApi.Data;
 
-public class UserTextDataDbContext : DbContext
+public class UserDataDbContext : DbContext
 {
-    public UserTextDataDbContext(DbContextOptions<UserTextDataDbContext> options) : base(options)
-    {
-    }
+    public UserDataDbContext(DbContextOptions<UserDataDbContext> options) : base(options)
+    { }
 
-    public DbSet<UserTextDataWrapper> UserData { get; set; }
-    public DbSet<Wrapper> Texts { get; set; }
+    public DbSet<UserData> UserData { get; set; }
+    public DbSet<UserText> Texts { get; set; }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<UserTextDataWrapper>()
-            .HasMany(c => c.Texts);
-
-        modelBuilder.Entity<UserTextDataWrapper>().HasData( new UserTextDataWrapper { Id = 88421114} );
-        modelBuilder.Entity<Wrapper>().HasData(new { Id = 88421114, textValue = "Hello1"});
-        modelBuilder.Entity<Wrapper>().HasData(new { Id = 88421114, textValue = "Hello2"});
-        
-    }
 }

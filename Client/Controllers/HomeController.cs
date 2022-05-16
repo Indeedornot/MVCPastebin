@@ -16,15 +16,9 @@ namespace Client.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-    private readonly IHttpClientFactory _httpClientFactory;
-    private string clientID = "mvc";
 
-    public HomeController(ILogger<HomeController> logger, IHttpClientFactory httpClientFactory)
-    {
-        _logger = logger;
-        _httpClientFactory = httpClientFactory;
-    }
+    public HomeController()
+    { }
 
     public async Task<IActionResult> Index()
     {
@@ -44,8 +38,5 @@ public class HomeController : Controller
         return SignOut("Cookies", "oidc");
     }
 
-    public async Task<IActionResult> Claims()
-    {
-        return Content(await DatabaseCaller.RetrieveClaimsJson());
-    }
+    
 }

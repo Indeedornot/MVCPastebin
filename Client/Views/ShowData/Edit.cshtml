@@ -1,25 +1,23 @@
-@model UserTextDataApi.Data.UserTextData
+@model (int, string)
+
 @{
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<!DOCTYPE html>
 
-<h4>UserTextDataWrapper</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Text" />
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
-
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
 <div>
-    <a asp-action="Index">Back to List</a>
+    <form asp-controller="ShowData" asp-action="EditPost" method="post">
+        <input type="text" name="text" value="@Model.Item2" required/>
+        <input type="number" name="id" hidden="hidden" value="@Model.Item1"/>
+        <label>Text</label>
+        <input type="submit"/>
+    </form>
 </div>
-
+</body>
+</html>

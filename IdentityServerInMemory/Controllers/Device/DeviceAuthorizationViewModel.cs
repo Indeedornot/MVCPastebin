@@ -4,11 +4,10 @@
 
 using IdentityServerInMemory.Controllers.Consent;
 
-namespace IdentityServerInMemory.Controllers.Device
+namespace IdentityServerInMemory.Controllers.Device;
+
+public class DeviceAuthorizationViewModel : ConsentViewModel
 {
-    public class DeviceAuthorizationViewModel : ConsentViewModel
-    {
-        public string UserCode { get; set; }
-        public bool ConfirmUserCode { get; set; }
-    }
+    public string UserCode { get; set; }
+    public bool ConfirmUserCode { get; set; }
 }

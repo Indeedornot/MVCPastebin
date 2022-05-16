@@ -3,11 +3,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace UserTextDataApi.Data;
 
-public class UserTextData
+public class UserData
 {
-    [DatabaseGenerated(DatabaseGeneratedOption.None)]
     [Key]
     public int Id { get; set; }
 
-    public string Text { get; set; }
+    public List<UserText> Texts { get; set; } = new List<UserText>();
 }

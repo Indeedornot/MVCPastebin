@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SonarLintProjectSettings">
+    <option name="fileExclusions">
+      <list>
+        <option value="DIRECTORY:IdentityServerInMemory/Controllers" />
+        <option value="DIRECTORY:IdentityServerInMemory/Views" />
+        <option value="FILE:IdentityServerInMemory/Controllers/Account/AccountController.cs" />
+        <option value="FILE:IdentityServerInMemory/Controllers/Account/AccountOptions.cs" />
+        <option value="FILE:IdentityServerInMemory/Controllers/Consent/ConsentController.cs" />
+        <option value="FILE:IdentityServerInMemory/Controllers/Consent/ConsentOptions.cs" />
+        <option value="FILE:IdentityServerInMemory/Controllers/Device/DeviceController.cs" />
+        <option value="FILE:IdentityServerInMemory/Controllers/Account/ExternalController.cs" />
+        <option value="FILE:IdentityServerInMemory/Controllers/Account/LoginViewModel.cs" />
+        <option value="FILE:IdentityServerInMemory/Controllers/SecurityHeadersAttribute.cs" />
+      </list>
+    </option>
+  </component>
+</project>

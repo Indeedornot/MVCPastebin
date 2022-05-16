@@ -3,7 +3,6 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UserTextDataApi.Data;
 
@@ -11,11 +10,10 @@ using UserTextDataApi.Data;
 
 namespace UserTextDataApi.Migrations
 {
-    [DbContext(typeof(UserTextDataDbContext))]
-    [Migration("20220515131935_InitialMigration")]
-    partial class InitialMigration
+    [DbContext(typeof(UserDataDbContext))]
+    partial class UserDataDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,46 +22,49 @@ namespace UserTextDataApi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("UserTextDataApi.Data.UserTextDataWrapper", b =>
+            modelBuilder.Entity("UserTextDataApi.Data.UserData", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.HasKey("Id");
 
                     b.ToTable("UserData");
                 });
 
-            modelBuilder.Entity("UserTextDataApi.Data.Wrapper", b =>
+            modelBuilder.Entity("UserTextDataApi.Data.UserText", b =>
                 {
-                    b.Property<int>("textId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("textId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("UserTextDataWrapperId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("textValue")
+                    b.Property<string>("TextValue")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("textId");
+                    b.Property<int?>("UserDataId")
+                        .HasColumnType("int");
 
-                    b.HasIndex("UserTextDataWrapperId");
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserDataId");
 
                     b.ToTable("Texts");
                 });
 
-            modelBuilder.Entity("UserTextDataApi.Data.Wrapper", b =>
+            modelBuilder.Entity("UserTextDataApi.Data.UserText", b =>
                 {
-                    b.HasOne("UserTextDataApi.Data.UserTextDataWrapper", null)
+                    b.HasOne("UserTextDataApi.Data.UserData", null)
                         .WithMany("Texts")
-                        .HasForeignKey("UserTextDataWrapperId");
+                        .HasForeignKey("UserDataId");
                 });
 
-            modelBuilder.Entity("UserTextDataApi.Data.UserTextDataWrapper", b =>
+            modelBuilder.Entity("UserTextDataApi.Data.UserData", b =>
                 {
                     b.Navigation("Texts");
                 });

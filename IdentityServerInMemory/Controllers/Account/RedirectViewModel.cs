@@ -3,10 +3,9 @@
 
 
 
-namespace IdentityServerInMemory.Controllers.Account
+namespace IdentityServerInMemory.Controllers.Account;
+
+public class RedirectViewModel
 {
-    public class RedirectViewModel
-    {
-        public string RedirectUrl { get; set; }
-    }
+    public string RedirectUrl { get; set; }
 }

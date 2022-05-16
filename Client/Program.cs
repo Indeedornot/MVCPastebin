@@ -48,8 +48,7 @@ builder.Services.AddAuthentication(options =>
         options.SaveTokens = true;
     });
 
-builder.Services.AddSession();  
-builder.Services.AddSingleton<DatabaseCaller>();  
+builder.Services.AddSession(); 
 builder.Services.AddHttpContextAccessor();  
 
 var app = builder.Build();
