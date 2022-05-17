@@ -1,46 +1,12 @@
 
-£
-sProgram Files/dotnet/sdk/6.0.202/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_6_default.editorconfig,3\5\352f41e4ec66f03d852847957fcf01da3ec34d2f
 D
 Client/Client.csproj,a\c\ac0e6f3a266d69221c8dbff68d9a27ddfaf4315f
-T
-$Client/Controllers/DatabaseCaller.cs,2\3\23483ad4fe6a0993f4aab7d011b848af835eb47d
-T
-$Client/Controllers/HomeController.cs,c\5\c5077c434a162dfb110f528f290912c37d6a17ed
-X
-(Client/Controllers/ShowDataController.cs,8\5\8525cfb4fcd6fb0345af15ffa1a702b41d6cf14e
 O
 Client/Models/ErrorViewModel.cs,4\f\4f20ed8aae7cbac084dc124201aba02d43ff83c4
-I
-Client/Models/UserData.cs,f\c\fc5ba214f522c7fa686769f4aea211c782af5fa9
-I
-Client/Models/UserText.cs,8\e\8e055e8e692326dba42d2909ee34e90f37de20be
 A
 Client/Program.cs,3\f\3f612aef79bcfb4f9b2ca1d31f3b249422ac4193
-U
-%Client/Properties/launchSettings.json,f\6\f6187b5f53b301f6ae88dc37242e3e7256debb2c
-N
-Client/Views/Home/Index.cshtml,f\f\ff2dbd64f6670a7e8a13df77a53bfce2b8206483
-P
- Client/Views/Home/Privacy.cshtml,8\c\8c457a9305154299e1872a0de846eaaa1d447164
-P
- Client/Views/Shared/Error.cshtml,d\6\d623874049c1f8e7c34befc56d59ccaa03e7eddb
-R
-"Client/Views/Shared/_Layout.cshtml,7\5\75d8cc47a138cf78c40c0af4a9046a97c1d39555
 V
 &Client/Views/Shared/_Layout.cshtml.css,2\2\222834e6218855c2b163ab4d3b556e64025cc29e
-d
-4Client/Views/Shared/_ValidationScriptsPartial.cshtml,c\d\cd69f9fd4b298a376619695f256a03b4b44d6616
-S
-#Client/Views/ShowData/Create.cshtml,c\1\c1dc64ff436d4a961f12522e169aab111abab1e1
-Q
-!Client/Views/ShowData/Edit.cshtml,0\0\00e21b2d7c59ee71d9609ed599e5a990c2b01623
-R
-"Client/Views/ShowData/Index.cshtml,a\0\a0839ef5c2ff3bcd0aa75843cb2a7a0835f86e6b
-P
- Client/Views/_ViewImports.cshtml,b\1\b122a516276eeac612667645ee48202c2fd15c66
-N
-Client/Views/_ViewStart.cshtml,e\9\e983540bba894341932ff5e4b56d2992f2a0cf78
 S
 #Client/appsettings.Development.json,d\9\d949a6ca20f618205622781b6de237e9bdc448f1
 G
@@ -55,8 +21,6 @@ c
 3Client/obj/Debug/net6.0/Client.RazorAssemblyInfo.cs,e\e\ee4058ce6cc6d47193c2e7a291133542344aac39
 K
 Client/wwwroot/css/site.css,5\4\54ea90069da1eee63effe18d4d8bae0ebbc06e52
-I
-Client/wwwroot/js/site.js,6\d\6da6b0f00782c34e914010bacf98017842d2b889
 T
 $Client/wwwroot/lib/bootstrap/LICENSE,4\c\4c6dd308a9c751b7d46048f868b8d1284a62eb7e
 h
@@ -531,18 +495,8 @@ r
 BIdentityServerInMemory/wwwroot/lib/jquery/dist/jquery.slim.min.map,1\0\104bfc16393fe2520f800f2851604493fde6a418
 ?
 PastebinMVC.sln,3\7\373fe3d96008d37814b449b59f3edb547becb0db
-l
-<UserTextDataApi/Controllers/DatabaseInteractionController.cs,0\e\0eee774b39cc8bce2e097d24ee2bf5f4aa9efdd8
-a
-1UserTextDataApi/Controllers/IdentityController.cs,3\8\3823e6ed11f1a289feffb2133cb90c1c64953d46
 R
 "UserTextDataApi/Data/Extensions.cs,7\6\765ec483ae8b408ccd2bfda4c559ddc0927f9207
-P
- UserTextDataApi/Data/UserData.cs,c\e\ced54e2fdd95c9f4a529dd8a0603781d3bb7f864
-]
--UserTextDataApi/Data/UserDataDbInitializer.cs,0\c\0cac1c7f22c776deab36c253ffdcf2c04d78b286
-P
- UserTextDataApi/Data/UserText.cs,c\b\cb0ac8ada72df13f5e0a3d969cd30815658d77e4
 ]
 -UserTextDataApi/Data/UserTextDataDbContext.cs,d\e\de380aa98698fd34e1f4a47f2131c28bc7774351
 r
@@ -571,5 +525,33 @@ p
 ZUserTextDataApi/obj/Debug/net6.0/UserTextDataApi.GeneratedMSBuildEditorConfig.editorconfig,c\b\cb76737896966db908d02d277a6c5055c2c8e986
 r
 BUserTextDataApi/obj/Debug/net6.0/UserTextDataApi.GlobalUsings.g.cs,4\e\4e1f79105cd42adeb08d2c1f3aa976044ae97254
+P
+ UserTextDataApi/Data/UserData.cs,c\e\ced54e2fdd95c9f4a529dd8a0603781d3bb7f864
+]
+-UserTextDataApi/Data/UserDataDbInitializer.cs,0\c\0cac1c7f22c776deab36c253ffdcf2c04d78b286
+a
+1UserTextDataApi/Controllers/IdentityController.cs,3\8\3823e6ed11f1a289feffb2133cb90c1c64953d46
 Q
 !Client/Controllers/DatabaseIPs.cs,c\e\ced3cc05c2ddde28b6cad34c1a7de43c1f97153f
+T
+$Client/Controllers/HomeController.cs,c\5\c5077c434a162dfb110f528f290912c37d6a17ed
+P
+ UserTextDataApi/Data/UserText.cs,c\b\cb0ac8ada72df13f5e0a3d969cd30815658d77e4
+I
+Client/Models/UserText.cs,8\e\8e055e8e692326dba42d2909ee34e90f37de20be
+P
+ Client/Views/Home/Privacy.cshtml,8\c\8c457a9305154299e1872a0de846eaaa1d447164
+N
+Client/Views/Home/Index.cshtml,f\f\ff2dbd64f6670a7e8a13df77a53bfce2b8206483
+I
+Client/Models/UserData.cs,f\c\fc5ba214f522c7fa686769f4aea211c782af5fa9
+N
+Client/Views/_ViewStart.cshtml,e\9\e983540bba894341932ff5e4b56d2992f2a0cf78
+Z
+*UserTextDataApi/Controllers/DatabaseIPs.cs,1\c\1cdc5147c0c89ac80ce461c3a6b3ab99c070275f
+P
+ Client/Views/_ViewImports.cshtml,b\1\b122a516276eeac612667645ee48202c2fd15c66
+I
+Client/wwwroot/js/site.js,6\d\6da6b0f00782c34e914010bacf98017842d2b889
+N
+Client/wwwroot/js/showPopup.js,9\a\9af681c60ecb985e0c16d1d759fab5c220514c62

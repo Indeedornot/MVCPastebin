@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ke9GK19AILX7ie7KKZr6LAIxiVHHAZXqRfbJ4ZwnrTM=",
+  "Hash": "9lociIthrdFUXWP+sbkyOjl7UsZ3noWKQyEbLNCFdPI=",
   "Source": "Client",
   "BasePath": "_content/Client",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Indeed\\Desktop\\Repositories\\PastebinMVC\\Client\\wwwroot\\js\\showPopup.js",
+      "SourceId": "Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Indeed\\Desktop\\Repositories\\PastebinMVC\\Client\\wwwroot\\",
+      "BasePath": "_content/Client",
+      "RelativePath": "js/showPopup.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\showPopup.js"
     },
     {
       "Identity": "C:\\Users\\Indeed\\Desktop\\Repositories\\PastebinMVC\\Client\\wwwroot\\js\\site.js",

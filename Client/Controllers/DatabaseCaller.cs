@@ -1,18 +1,12 @@
-﻿using IdentityModel.Client;
+﻿using Client.Models;
+using IdentityModel.Client;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using UserTextDataApi.Data;
 
 namespace Client.Controllers;
 
-/*TODO: Add IsSuccess handlers
- if (!response.IsSuccessStatusCode)
- {
-     Console.WriteLine(response.StatusCode);
- }
-*/
 public static class DatabaseCaller
 {
     
@@ -27,6 +21,14 @@ public static class DatabaseCaller
         return apiClient;
     }
 
+    public static async Task<string> RetrieveClaimsJson()
+    {
+        using var apiClient = await SetToken();
+
+        var response = await apiClient.GetAsync(DatabaseIPs.Identity);
+        string content = await response.Content.ReadAsStringAsync();
+        return JArray.Parse(content).ToString();
+    }
     public static async Task<UserData?> RetrieveAll()
     {
         using var apiClient = await SetToken();
@@ -35,12 +37,6 @@ public static class DatabaseCaller
         return JsonConvert.DeserializeObject<UserData?>(responseJson);
     }
     
-    /// <summary>
-    /// Returns UserTextData model with a single text in a list Texts
-    /// or null if index is outside of bounds
-    /// </summary>
-    /// <param name="id"></param>
-    /// <returns></returns>
     public static async Task<UserData?> Retrieve(int id)
     {
         using var apiClient = await SetToken();
@@ -49,36 +45,31 @@ public static class DatabaseCaller
         return JsonConvert.DeserializeObject<UserData>(responseJson);
     }
     
-    public static async Task Add(string userText)
+    public static async Task<bool> Add(string userText)
     {
         using var apiClient = await SetToken();
-        _ = await apiClient.PostAsync(DatabaseIPs.Add(userText), null);
+        var response = await apiClient.PostAsync(DatabaseIPs.Add(userText), null);
+        return response.IsSuccessStatusCode;
     }
     
-    public static async Task DeleteAll()
+    public static async Task<bool> DeleteAll()
     {
         using var apiClient = await SetToken();
-        _ = await apiClient.PostAsync(DatabaseIPs.DeleteAll,null);
+        var response = await apiClient.PostAsync(DatabaseIPs.DeleteAll,null);
+        return response.IsSuccessStatusCode;
     }
     
-    public static async Task Delete(int id)
+    public static async Task<bool> Delete(int id)
     {
         using var apiClient = await SetToken();
-        _ = await apiClient.PostAsync(DatabaseIPs.Delete(id),null);
+        var response = await apiClient.PostAsync(DatabaseIPs.Delete(id),null);
+        return response.IsSuccessStatusCode;
     }
 
-    public static async Task Update(int id, string text)
+    public static async Task<bool> Update(int id, string text)
     {
         using var apiClient = await SetToken();
-        _ = await apiClient.PostAsync(DatabaseIPs.Update(id, text),null);
-    }
-    
-    public static async Task<string> RetrieveClaimsJson()
-    {
-        using var apiClient = await SetToken();
-
-        var response = await apiClient.GetAsync(DatabaseIPs.Identity);
-        string content = await response.Content.ReadAsStringAsync();
-        return JArray.Parse(content).ToString();
+        var response = await apiClient.PostAsync(DatabaseIPs.Update(id, text),null);
+        return response.IsSuccessStatusCode;
     }
 }

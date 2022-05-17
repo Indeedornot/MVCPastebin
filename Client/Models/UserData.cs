@@ -1,8 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using Client.Models;
-
-namespace UserTextDataApi.Data;
+﻿namespace Client.Models;
 
 public class UserData
 {

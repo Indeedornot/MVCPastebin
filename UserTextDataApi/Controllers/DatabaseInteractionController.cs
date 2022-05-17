@@ -20,7 +20,7 @@ public class DatabaseInteractionController : Controller
         _context = context;
     }
 
-    [HttpGet("RetrieveAll")]
+    [HttpGet(DatabaseIPs.RetrieveAll)]
     public async Task<UserData?> RetrieveAll()
     {
         int userId = GetUserId();
@@ -28,7 +28,7 @@ public class DatabaseInteractionController : Controller
         return new UserData() {Id = userId, Texts = userData!.Texts};
     }
     
-    [HttpGet("Retrieve/{id:int}")]
+    [HttpGet(DatabaseIPs.Retrieve)]
     public async Task<UserData?> Retrieve(int id)
     {
         int userId = GetUserId();
@@ -37,52 +37,53 @@ public class DatabaseInteractionController : Controller
         return new UserData() {Id = userId, Texts = {userData!.Texts.ElementAt(id)}};
     }
     
-    [HttpPost("Add/{userText}")]
-    public async Task Add(string userText)
+    [HttpPost(DatabaseIPs.Add)]
+    public async Task<IActionResult> Add(string userText)
     {
         int userId = GetUserId();
 
         var existingData = await FindWithText(userId);
-        existingData?.Texts.Add(Text(userText));
-        _context.UserData.Update(existingData!);
+        if(existingData is null) return NotFound();
+        existingData.Texts.Add(Text(userText));
         await _context.SaveChangesAsync();
+        return Ok();
     }
     
-    [HttpPost("Update/{index:int}/{userText}")]
-    public async Task Update(int index, string userText)
+    [HttpPost(DatabaseIPs.Update)]
+    public async Task<IActionResult> Update(int index, string userText)
     {
         int userId = GetUserId();
 
-        var existingData = await FindWithText(userId);
-        if (index > existingData!.Texts.Count - 1 || index < 0) return;
-        existingData!.Texts[index] = new UserText(userText);
-        _context.UserData.Update(existingData!);
+        var existingText = await _context.Texts.FindAsync(index);
+        if (existingText is null) return NotFound();
+        existingText.TextValue = userText;
         await _context.SaveChangesAsync();
+        return Ok();
     }
     
-    [HttpPost("Delete/{index:int}")]
-    public async Task Delete(int index)
+    [HttpPost(DatabaseIPs.Delete)]
+    public async Task<IActionResult> Delete(int index)
     {
         int userId = GetUserId();
-        var userData = await FindWithText(userId);
+        var existingText = await _context.Texts.FindAsync(index);
         
-        if (userData is null) return;
-        if (index > userData.Texts.Count - 1 || index < 0) return;
+        if (existingText is null) return NotFound();
 
-        userData.Texts.RemoveAt(index);
-        _context.Update(userData);
-        await _context.SaveChangesAsync();
+        _context.Remove(existingText);
+        await _context .SaveChangesAsync();
+        return Ok();
     }
     
-    [HttpPost("DeleteAll/")]
-    public async Task DeleteAll()
+    [HttpPost(DatabaseIPs.DeleteAll)]
+    public async Task<IActionResult> DeleteAll()
     {
         int userId = GetUserId();
         var record = await FindWithText(userId);
 
-        if (record is null) return;
+        if (record is null) return NotFound();
         record.Texts.Clear();
         await _context.SaveChangesAsync();
+        return Ok();
     }
 
     public int GetUserId()

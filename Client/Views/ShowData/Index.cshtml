@@ -1,8 +1,15 @@
 @using Microsoft.EntityFrameworkCore.Metadata.Internal
-@model UserTextDataApi.Data.UserData?
+@using Client.Models
+@using SafeRouting.TagHelpers
+@model UserData?
 
 @{
     ViewData["Title"] = "Index";
+}
+
+@if (ViewBag.succeeded is false)
+{
+    await Html.RenderPartialAsync("ShowPopUp");
 }
 
 <h1>Index</h1>
@@ -19,15 +26,23 @@
     @for (int i = 0; Model is not null && i < Model.Texts.Count; i++)
     {
         <tr>
-            <td>@Model.Texts[i].textValue</td>
+            <td>@Model.Texts[i].TextValue</td>
             <td>@i</td>
             <td>@Model.Id</td>
             <td>
-                <a for-route="Routes.Controllers.ShowData.Edit(i, Model.Texts[i].textValue)">Edit</a>
+                <a for-route="Routes.Controllers.ShowData.Edit(Model.Texts[i].Id, Model.Texts[i].TextValue)">Edit</a>
             </td>
             <td>
-                <a for-route="Routes.Controllers.ShowData.Delete(i)">Delete</a>
+                <a for-route="Routes.Controllers.ShowData.Delete(Model.Texts[i].Id)">Delete</a>
             </td>
         </tr>
     }
 </table>
+
+@section Scripts {
+    <script defer>
+        $('.pop-up span').click(function() {
+                    $('.pop-up').hide(0);
+                });
+    </script>
+}

@@ -6,12 +6,14 @@ public class UserText
 {
     public UserText(string text)
     {
-        textValue = text;
+        TextValue = text;
     }
 
     public UserText()
     {
     }
     
-    public string textValue { get; set; }
+    [Key]
+    public int Id { get; set; }
+    public string TextValue { get; set; }
 }

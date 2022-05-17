@@ -29,6 +29,7 @@
   <ItemGroup>
     <Folder Include="Code" />
     <Folder Include="obj\Debug\net6.0" />
+    <Folder Include="Views\PartialViews" />
   </ItemGroup>
 
   <ItemGroup>
