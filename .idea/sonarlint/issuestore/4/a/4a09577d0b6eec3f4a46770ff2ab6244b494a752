@@ -1,10 +1,0 @@
-
-lcsharpsquid:S1118"OAdd a 'protected' constructor or the 'static' keyword to the class declaration.(Ã¤¬
-fcsharpsquid:S1104	"DMake this field 'private' and encapsulate it in a 'public' property.(Ş€ƒšøÿÿÿÿ
-acsharpsquid:S1104
-"DMake this field 'private' and encapsulate it in a 'public' property.(ûš´
-fcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(”šìøÿÿÿÿ
-rcsharpsquid:S2223	"PChange the visibility of 'EnableOfflineAccess' or make it 'const' or 'readonly'.(Ş€ƒšøÿÿÿÿ
-rcsharpsquid:S2223
-"UChange the visibility of 'OfflineAccessDisplayName' or make it 'const' or 'readonly'.(ûš´
-wcsharpsquid:S2223"UChange the visibility of 'OfflineAccessDescription' or make it 'const' or 'readonly'.(”šìøÿÿÿÿ
